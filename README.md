@@ -1,6 +1,6 @@
 # Klang
 
-TODO: Write a gem description
+Parse korean hangle language.
 
 ## Installation
 
@@ -20,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+word = '아'
+Klang::Klang.new(word).to_alphabet # => a
+```
 
 ## Contributing
 

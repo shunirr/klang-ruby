@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Klang::VERSION
   spec.authors       = ["shunirr"]
   spec.email         = ["m@s5r.jp"]
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.description   = %q{TODO: Write a gem description}
-  spec.homepage      = ""
+  spec.summary       = %q{Parse korean hangle language.}
+  spec.description   = %q{Parse korean hangle language.}
+  spec.homepage      = "https://github.com/shunirr/klang-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
