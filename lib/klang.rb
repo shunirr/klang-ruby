@@ -77,6 +77,15 @@ module Klang
       0x11C2 => 'h',   # ㅎ
     }
   
+    def self.hangul?(char)
+      o = char.ord
+      ((o >= 0x1100 && o <= 0x11FF) ||
+        (o >= 0xA960 && o <= 0xA97F) ||
+        (o >= 0xD7B0 && o <= 0xD7FF) ||
+        (o >= 0x3130 && o <= 0x318F) ||
+        (o >= 0xAC00 && o <= 0xD7AF))
+    end
+
     def initialize(str)
       @raw = str
       @alphabet = nil
@@ -91,7 +100,7 @@ module Klang
     def parse_hangul
       alpha = []
       @raw.each_char do |c|
-        unless hangul?(c)
+        unless Klang.hangul?(c)
           alpha << c
           next
         end
@@ -101,15 +110,6 @@ module Klang
         alpha << PATCHIM[patchim.ord] || CONSONANT[patchim.ord] if patchim
       end
       @alphabet = alpha.join
-    end
-  
-    def hangul?(char)
-      o = char.ord
-      ((o >= 0x1100 && o <= 0x11FF) ||
-        (o >= 0xA960 && o <= 0xA97F) ||
-        (o >= 0xD7B0 && o <= 0xD7FF) ||
-        (o >= 0x3130 && o <= 0x318F) ||
-        (o >= 0xAC00 && o <= 0xD7AF))
     end
   end
 end
