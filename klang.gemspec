@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Klang::VERSION
   spec.authors       = ["shunirr"]
   spec.email         = ["m@s5r.jp"]
-  spec.summary       = %q{Parse korean hangle language.}
-  spec.description   = %q{Parse korean hangle language.}
+  spec.summary       = %q{Parse korean hangul language.}
+  spec.description   = %q{Parse korean hangul language.}
   spec.homepage      = "https://github.com/shunirr/klang-ruby"
   spec.license       = "MIT"
 
@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "unicode"
+  spec.add_development_dependency "unicode", "~> 0.4.4.4"
 end
