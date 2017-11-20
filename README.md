@@ -1,6 +1,6 @@
 # Klang
 
-Parse korean hangle language.
+Parse korean hangul language.
 
 ## Installation
 
@@ -23,6 +23,11 @@ Or install it yourself as:
 ```ruby
 word = '아'
 Klang::Klang.new(word).to_alphabet # => a
+```
+
+```ruby
+Klang::Klang.hangul? '아' # => true
+Klang::Klang.hangul? 'あ' # => false
 ```
 
 ## Contributing
