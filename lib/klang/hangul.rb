@@ -1,5 +1,12 @@
 module Klang
   class Hangul
+    INCLUDING_ALPHABETS = [
+      "g", "k", "n", "d", "t",
+      "r", "m", "b", "p", "s",
+      "j", "c", "h", "a", "e",
+      "y", "o", "w", "u", "i"
+    ]
+
     CONSONANT = {
       0x1100 => 'g',   # ㄱ
       0x1101 => 'kk',  # ㄲ

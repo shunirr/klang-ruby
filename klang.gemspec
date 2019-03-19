@@ -19,4 +19,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "unicode", "~> 0.4.4.4"
+  spec.add_dependency "romaji", "~> 0.2.4"
 end

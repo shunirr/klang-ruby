@@ -58,7 +58,7 @@ module Klang
     end
 
     def next_vowel?(index)
-      Hangul.vowel?(@raw[index]) && Hangul.vowel?(@raw[index..index+1])
+      Hangul.vowel?(@raw[index]) || Hangul.vowel?(@raw[index..index+1])
     end
   end
 end
