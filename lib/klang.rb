@@ -1,3 +1,4 @@
 require "klang/version"
-require 'klang/alphabet'
+require 'klang/hangul'
 require 'klang/klang'
+require 'klang/alphabet'
