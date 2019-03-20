@@ -30,6 +30,16 @@ Klang::Klang.hangul? '아' # => true
 Klang::Klang.hangul? 'あ' # => false
 ```
 
+```ruby
+word = 'a'
+Klang::Alphabet.new(word).to_hangul # => ['아']
+```
+
+```ruby
+word = 'ア'
+Klang::Katakana.new(word).to_hangul # => ['아']
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/klang/fork )
